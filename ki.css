@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "urbanist";
+}
+
+.logo{
+    height: 35px;
+    width: 235px;
+    align-items: center;
+}
+
+li, a, button {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #f27305;
+    border-style: dotted;
+    border-radius: 50px;
+}
+
+body{
+    background-color: #f5cae8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: #a5bb1a;
+}
+
+.header{
+    align-items: center;
+    display: flex;
+    width: 1280px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: #a5bb1a;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: #f27305;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+nav{
+    height: 85px;
+    align-items: center;
+}
+
+.kerjasama, .tipe, .gallery{
+    margin-top: 5px;
+    margin: 15px;
+    padding: 10px;
+}
+
+p{
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 380px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 13px;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.gallery img:hover{
+    filter: grayscale(2);
+    transform: scale(1.03);
+}
+
+.fototipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fototipe img{
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    transition: 400ms;
+}
+
+.gallery img:hover{
+    filter: blur(2);
+    transform: scale(1.03);
+}
+
+.text{
+    text-align: center;
+}

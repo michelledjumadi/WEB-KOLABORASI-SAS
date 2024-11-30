@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "urbanist";
+}
+
+.logo{
+    height: 35px;
+    width: 235px;
+    align-items: center;
+}
+
+li, a, button {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #f27305;
+    border-style: dotted;
+    border-radius: 50px;
+}
+
+body{
+    background-color: #f5cae8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: #a5bb1a;
+}
+
+.header{
+    align-items: center;
+    display: flex;
+    width: 1280px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: pink;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: #a5bb1a;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: #f27305;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+nav{
+    height: 85px;
+    align-items: center;
+}
+
+.kerjasama, .container{
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+p{
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Increased height to prevent text cropping */
+    transition: 400ms;
+}
+
+.container img {
+    width: 100%; /* Fills the container width */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image doesn't distort but fits */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container div {
+    height: auto; /* Adjusts height dynamically to fit content */
+    width: 500px; /* Uniform width for all containers */
+    background-color: #ffffff;
+    margin: 10px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container p {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Increases line spacing for readability */
+}
+
+.container div:hover{
+    filter: grayscale(2);
+    transform: scale(1.03);
+}
